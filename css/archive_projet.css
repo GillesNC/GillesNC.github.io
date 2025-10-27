@@ -1,0 +1,133 @@
+/* HERO SECTION */
+.hero_archive {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    text-align: center;
+    height: 80vh;
+    gap: 30px;
+}
+
+.hero_archive h1, .hero_archive p {
+    width: 85%;
+}
+
+h1 span {
+    color: #9747FF;
+}
+
+/* PROJECT SECTION */
+.project_section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+}
+
+.project_section_grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+
+.project_section_item {
+    display: flex;
+    width: 100%;
+    background-color: #EDEDED;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.project_section_item img {
+    width: 550px;
+    object-fit: cover;
+}
+
+.project_section_collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 50px;
+}
+
+.project_section_collapse_button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.project_section_collapse_button div {
+    padding: 20px;
+}
+
+.project_section_collapse_button div h2 {
+    color: #2D2D2D;
+}
+
+.project_section_collapse_button i {
+    color: #9747FF;
+    font-size: 50px;
+}
+
+.project_section_collapse_content .btn_outline {
+    border: 1px solid #2d2d2d;
+    background-color: transparent;
+    color: #2d2d2d;
+}
+
+.active, .project_section_collapse_button:hover {
+    border-bottom: none;
+}
+
+.project_section_collapse_content {
+    padding: 20px;
+    display: none;
+}
+
+.project_section_collapse_content p {
+    margin-bottom: 20px;
+}
+
+.project_section_collapse_content .button_project {
+    display: flex;
+    gap: 20px;
+}
+
+/* .active, .project_section_item  {
+    background-color: #2D2D2D;
+} */
+
+/*********** MOBILE ***********/
+@media screen and (max-width: 768px) {
+    .project_section_item {
+        flex-direction: column;
+    }
+
+    .project_section_item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project_section_collapse {
+        padding: 20px;
+    }
+
+    .project_section_collapse_button i {
+        font-size: 30px;
+    }
+
+    .button_project {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,315 @@
+/*********** SECTION MAIN CONTENT - ABOUT ME ***********/
+.about_me_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.about_me_section h2 {
+    text-align: center;
+    color: #2D2D2D;
+    width: 50%;
+}
+
+.about_me {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #2D2D2D;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.about_me img {
+    width: 50%;
+    height: 490px;
+    object-fit: cover;
+}
+
+.about_me_description {
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about_me_description h3 {
+    color: #fff;
+    font-size: 50px;
+}
+
+.about_me_description p {
+    color: #fff;
+    font-size: 20px;
+}
+
+/*********** SECTION MAIN CONTENT - SERVICES ***********/
+.main_services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: #2D2D2D;
+    padding: 50px 0;
+    width: 99vw;
+    margin-bottom: 120px;
+}
+
+.main_services h2 {
+    color: #EDEDED;
+    text-align: center;
+    width: 70%;
+}
+
+.services_container {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin: 0 0 -200px 0;
+}
+
+.services_card {
+    background-color: #EDEDED;
+    border-radius: 25px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: #2D2D2D35 0px 4px 12px;
+    overflow: hidden;
+}
+
+.services_card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.services_card div {
+    padding: 20px;
+    height: 200px;
+}
+
+.services_card h3 {
+    font-size: 30px;
+    color: #2D2D2D;
+}
+
+.services_card p {
+    font-size: 18px;
+    color: #2D2D2D;
+}
+
+/*********** SECTION MAIN CONTENT - PROJECTS ***********/
+.project {
+    background-color: #2D2D2D;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 100%;
+    height: 680px;
+}
+
+.carousel_projects {
+    width: 50%;
+    overflow: hidden;
+}
+
+.carousel_projects img {
+    object-fit: cover;
+    filter: blur(4px);
+}
+
+.project_description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+    width: 50%;
+}
+
+.project_description h2 {
+    color: #EDEDED;
+    width: 70%;
+    line-height: 1;
+}
+
+.project p {
+    color: #EDEDED;
+}
+
+.project_button {
+    display: flex;
+    gap: 30px;
+}
+
+/*********** SECTION MAIN CONTENT - MY METODOLOGY ***********/
+.methodology {
+    display: flex;
+    background-color: #2D2D2D;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 25px;
+    padding: 50px;
+    gap: 50px;
+    margin-bottom: 120px;
+}
+
+.methodology h2 {
+    color: #EDEDED;
+}
+
+.methodology > div {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 50px;
+    width: 100%;
+    margin: 0 0 -200px 0;
+}
+
+.methodology_step {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #2D2D2D;
+    border: 1px solid #EDEDED;
+    border-radius: 25px;
+    width: 25%;
+    padding: 30px;
+}
+
+.methodology_step h3 {
+    color: #EDEDED;
+    font-size: 25px;
+}
+
+.methodology_step p {
+    color: #EDEDED;
+    font-size: 20px;
+}
+
+.methodology_step span {
+    font-size: 70px;
+    font-weight: bold;
+    color: #9747FF;
+}
+
+.methodology_step:hover {
+    background-color: #9747FF;
+}
+
+.methodology_step:hover span {
+    color: #EDEDED; 
+}
+
+/*********** MOBILE ***********/
+@media (max-width: 768px) {
+    .about_me_section {
+        gap: 30px;
+    }
+    
+    .about_me_section h2 {
+        width: 80%;
+        font-size: 30px;
+    }
+
+    .about_me {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about_me img {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .about_me_description {
+        width: 100%;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .about_me_description h3 {
+        font-size: 25px;
+    }
+
+    .about_me_description button, p {
+        font-size: 16px;
+    }
+
+    .main_services {
+        width: 100vw;
+        height: 450px;
+        margin-bottom: 1400px;
+    }
+
+    .main_services h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .services_container {
+        margin: -20px 0 0 0;
+        padding: 10px;
+        gap: 30px;
+    }
+    .services_card {
+        width: 100%;
+    }
+
+    .project {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .carousel_projects {
+        width: 100%;
+        height: 300px;
+    }
+    .project_description {
+        width: 100%;
+        padding: 20px;
+        gap: 20px;
+    }
+    .project_description h2 {
+        font-size: 30px;
+    }
+    .project_button {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .methodology {
+        padding: 20px;
+        gap: 30px;
+        margin-bottom: 0;
+    }
+
+    .methodology h2 {
+        font-size: 30px;
+    }
+
+    .methodology > div {
+        flex-direction: column;
+        gap: 30px;
+        margin: 0;
+    }
+    .methodology_step {
+        width: 100%;
+        padding: 20px;
+        gap: 10px;
+    }
+    .methodology_step h3 {
+        font-size: 20px;
+    }
+    .methodology_step p {
+        font-size: 16px;
+    }
+}

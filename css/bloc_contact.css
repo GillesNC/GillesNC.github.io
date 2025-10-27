@@ -1,0 +1,40 @@
+/*********** BLOC ECHANGEZ AVEC MOI ***********/
+.contact_me {
+    display: flex;
+    justify-content: space-around;
+    height: 280px;
+    align-items: center;
+    gap: 20px;
+    padding: 55px;
+    background-color: #2D2D2D;
+    border-radius: 25px;
+}
+
+.contact_me div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    color: #EDEDED;
+}
+
+.contact_me h2 {
+    font-size: 30px;
+}
+
+/*********** MOBILE ***********/
+@media (max-width: 768px) {
+    .contact_me {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .contact_me div {
+        width: 100%;
+    }
+
+    .contact_me h2 {
+        font-size: 25px;
+    }
+}
