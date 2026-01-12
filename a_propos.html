@@ -71,6 +71,33 @@
             </div>
         </section>
 
+        <!-- SECTION SOFT SKILLS -->
+        <section class="soft_skills_section">
+            <h2>Mes soft skills</h2>
+            <div class="soft_skills_container">
+                <div class="soft_skill">
+                    <i class="fa fa-lightbulb"></i>
+                    <h3>Organisé</h3>
+                    <p>Capacité à planifier, structurer et prioriser les tâches pour optimiser l'efficacité et atteindre les objectifs fixés.</p>
+                </div>
+                <div class="soft_skill">
+                    <i class="fa fa-users"></i>
+                    <h3>Travail en équipe</h3>
+                    <p>Aptitude à collaborer efficacement avec les autres, en partageant des idées, en écoutant et en contribuant au succès collectif.</p>
+                </div>
+                <div class="soft_skill">
+                    <i class="fa fa-tasks"></i>
+                    <h3>Gestion du temps</h3>
+                    <p>Capacité à organiser et à planifier les tâches de manière efficace pour respecter les délais et atteindre les objectifs fixés.</p>
+                </div>
+                <div class="soft_skill">
+                    <i class="fa fa-comments"></i>
+                    <h3>Communication</h3>
+                    <p>Aptitude à transmettre des informations de manière claire et concise, que ce soit à l'oral ou à l'écrit.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- SECTION EXPERIENCE -->
          <section class="experience_section">
             <h2>Mon expérience</h2>
@@ -159,19 +186,5 @@
 </body>
 
 <!-- SCRIPT JS COLLAPSE -->
-<script>
-    var coll = document.getElementsByClassName("collapse_button");
-    var i;
-    for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-        content.style.display = "none";
-        } else {
-        content.style.display = "block";
-        }
-    });
-    }
-</script>
+<script src="../js/collapse.js"></script>
 </html>
